@@ -87,6 +87,12 @@ public class Detective {
 		int num = Integer.parseInt(numStr);
 
 		//ここに記述する
+		//三項演算子（条件演算子
+		//条件式 ? 真の場合の値 : 偽の場合の値
+		//numが1なら不正解です。　それ以外の場合は正解です。を返す。
+		String answer = (num == 1) ? "不正解です。" : "正解です。";
+		System.out.println("\n探偵：");
+		System.out.println(answer);
 
 	}
 
