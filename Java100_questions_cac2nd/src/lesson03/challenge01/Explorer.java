@@ -39,6 +39,8 @@ import java.io.InputStreamReader;
 
 public class Explorer {
 
+	//チェック例外「コンパイルが発生を予測できる例外」→メソッド宣言の後に[throws]
+	//非チェック例外「コンパイラが発見できない例外」→throw [例外名] でOK
 	public static void main(String[] args) throws IOException {
 
 		System.out.println("隊長：");

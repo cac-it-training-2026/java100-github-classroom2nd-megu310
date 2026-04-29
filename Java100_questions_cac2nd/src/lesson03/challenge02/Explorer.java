@@ -68,6 +68,7 @@ public class Explorer {
 			System.out.println("あと" + (3 - i) + "回！\n");
 			System.out.print("袋に何個入れますか？＞");
 			String numStr = br.readLine();
+			//代入演算子　+=　加算して代入
 			inputCans += Integer.parseInt(numStr);
 
 		}

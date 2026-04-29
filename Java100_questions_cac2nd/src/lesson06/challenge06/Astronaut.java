@@ -12,45 +12,44 @@
 package lesson06.challenge06;
 
 class Spaceship {
-    private int air;
-    private int fuel;
+	private int air;
+	private int fuel;
 
-    //このコンストラクタを変更する。
-    public Spaceship() {
-        this.air = 100;
-        this.fuel = 100;
-    }
+	//このコンストラクタを変更する。
+	private Spaceship() {
+		this.air = 100;
+		this.fuel = 100;
+	}
 
-    public Spaceship(int air, int fuel) {
-        this.air = air;
-        this.fuel = fuel;
-    }
+	public Spaceship(int air, int fuel) {
+		this.air = air;
+		this.fuel = fuel;
+	}
 
-    public int getFuel() {
-        return fuel;
-    }
+	public int getFuel() {
+		return fuel;
+	}
 
-    public void setFuel(int fuel) {
-        this.fuel = fuel;
-    }
+	public void setFuel(int fuel) {
+		this.fuel = fuel;
+	}
 
-    public int getAir() {
-        return air;
-    }
+	public int getAir() {
+		return air;
+	}
 
-    public void setAir(int air) {
-        this.air = air;
-    }
+	public void setAir(int air) {
+		this.air = air;
+	}
 
 }
 
 public class Astronaut {
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-        //コメントを外すとコンパイルエラーになる
-        //Spaceship spaceship1 = new Spaceship();
+		//コメントを外すとコンパイルエラーになる
+		Spaceship spaceship1 = new Spaceship();
 
-
-    }
+	}
 }

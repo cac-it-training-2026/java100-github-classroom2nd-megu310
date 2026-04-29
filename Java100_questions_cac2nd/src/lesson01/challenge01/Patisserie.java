@@ -21,5 +21,4 @@ public class Patisserie {
 		System.out.println("【ポエール・ネルメ】");
 		System.out.println("ただいまより開店です！！");
 	}
-
 }

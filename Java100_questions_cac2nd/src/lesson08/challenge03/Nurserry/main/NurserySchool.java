@@ -1,0 +1,26 @@
+package lesson08.challenge03.Nurserry.main;
+
+import lesson08.challenge03.logic.Nurse;
+import lesson08.challenge03.logic.NurserySchoolChild;
+
+public class NurserySchool {
+
+	public static void main(String[] args) {
+
+		Nurse nurse1 = new Nurse("保育太郎");
+		Nurse nurse2 = new Nurse("保育次郎");
+		Nurse nurse3 = new Nurse("保育三郎");
+
+		System.out.println(nurse1.getName() + "が出勤しました。");
+		System.out.println(nurse2.getName() + "が出勤しました。");
+		System.out.println(nurse3.getName() + "が出勤しました。");
+
+		NurserySchoolChild child1 = new NurserySchoolChild("園児①");
+		NurserySchoolChild child2 = new NurserySchoolChild("園児②");
+		NurserySchoolChild child3 = new NurserySchoolChild("園児③");
+
+		System.out.println(child1.getName() + "が登園しました。");
+		System.out.println(child2.getName() + "が登園しました。");
+		System.out.println(child3.getName() + "が登園しました。");
+	}
+}
