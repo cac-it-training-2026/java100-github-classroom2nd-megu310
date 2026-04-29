@@ -34,45 +34,50 @@
 package lesson07.challenge03;
 
 class Samurai {
-
-    void fight() {
-        System.out.println("戦うよ～。");
-    }
-
+	void fight() {
+		System.out.println("戦うよ～。");
+	}
 }
 
-
 //ここに問題1で作成したRetainerクラスを記述
-
+class Retainer extends Samurai {
+	public void getPaid() {
+		System.out.println("給料をもらうよ～。");
+	}
+}
 
 //ここにMagistrateクラスを記述
-
+class Magistrate extends Retainer {
+	public void judge() {
+		System.out.println("判決を下すよ～。");
+	}
+}
 
 public class CastleTown {
 
-    public static void main(String[] args) {
-        System.out.println("侍は戦います。\n");
+	public static void main(String[] args) {
+		System.out.println("侍は戦います。\n");
+		System.out.println("侍1：");
 
-        System.out.println("侍1：");
+		Samurai samurai1 = new Samurai();
+		samurai1.fight();
 
-        Samurai samurai1 = new Samurai();
-        samurai1.fight();
+		System.out.println("\n藩士はそれに加えて給料をもらいます。\n");
+		System.out.println("藩士1：");
 
-        System.out.println("\n藩士はそれに加えて給料をもらいます。\n");
+		//ここに必要な処理を記述
+		Retainer retainer = new Retainer();
+		retainer.fight();
+		retainer.getPaid();
 
-        System.out.println("藩士1：");
+		System.out.println("\n奉行はそれに加えて判決も下します。\n");
+		System.out.println("奉行1：");
 
+		//ここに必要な処理を記述
+		Magistrate magistrate = new Magistrate();
+		magistrate.fight();
+		magistrate.getPaid();
+		magistrate.judge();
 
-        //ここに必要な処理を記述
-
-
-        System.out.println("\n奉行はそれに加えて判決も下します。\n");
-
-        System.out.println("奉行1：");
-
-
-        //ここに必要な処理を記述
-
-
-    }
+	}
 }

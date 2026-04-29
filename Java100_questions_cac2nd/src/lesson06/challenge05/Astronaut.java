@@ -28,52 +28,58 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 class Spaceship {
-    private int air;
-    private int fuel;
+	private int air;
+	private int fuel;
 
-    public Spaceship() {
-        this.air = 100;
-        this.fuel = 100;
-    }
+	public Spaceship() {
+		this.air = 100;
+		this.fuel = 100;
+	}
 
-    //ここに適切な処理を記述する。
+	//ここに適切な処理を記述する。
+	public Spaceship(int air, int fuel) {
+		this.air = air;
+		this.fuel = fuel;
+	}
 
-    public int getFuel() {
-        return fuel;
-    }
+	public int getFuel() {
+		return fuel;
+	}
 
-    public void setFuel(int fuel) {
-        this.fuel = fuel;
-    }
+	public void setFuel(int fuel) {
+		this.fuel = fuel;
+	}
 
-    public int getAir() {
-        return air;
-    }
+	public int getAir() {
+		return air;
+	}
 
-    public void setAir(int air) {
-        this.air = air;
-    }
+	public void setAir(int air) {
+		this.air = air;
+	}
 
 }
 
 public class Astronaut {
 
-    public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException {
 
-        Spaceship spaceship1 = new Spaceship();
-        System.out.print("空気の初期値は：" +spaceship1.getAir()+"リットルです。\n");
-        System.out.print("燃料の初期値は：" +spaceship1.getFuel()+"ガロンです。\n");
+		Spaceship spaceship1 = new Spaceship();
+		System.out.print("空気の初期値は：" + spaceship1.getAir() + "リットルです。\n");
+		System.out.print("燃料の初期値は：" + spaceship1.getFuel() + "ガロンです。\n");
 
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        System.out.print("\n空気の初期値を入力してください＞");
-        String airStr = br.readLine();
-        int air = Integer.parseInt(airStr);
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		System.out.print("\n空気の初期値を入力してください＞");
+		String airStr = br.readLine();
+		int air = Integer.parseInt(airStr);
 
-        System.out.print("燃料の初期値を入力してください＞");
-        String fuelStr = br.readLine();
-        int fuel = Integer.parseInt(fuelStr);
+		System.out.print("燃料の初期値を入力してください＞");
+		String fuelStr = br.readLine();
+		int fuel = Integer.parseInt(fuelStr);
 
-        //ここに適切な処理を記述する。
-
-    }
+		//ここに適切な処理を記述する。
+		Spaceship spaceship2 = new Spaceship(air, fuel);
+		System.out.print("空気の初期値は：" + spaceship2.getAir() + "リットルです。\n");
+		System.out.print("燃料の初期値は：" + spaceship2.getFuel() + "ガロンです。\n");
+	}
 }

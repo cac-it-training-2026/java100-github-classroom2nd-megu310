@@ -21,48 +21,54 @@
 package lesson06.challenge08;
 
 class Spaceship {
-    private int air;
-    private int fuel;
-    private static int number;
+	private int air;
+	private int fuel;
+	private static int number;
 
-    public Spaceship() {
-        System.out.println("新しい宇宙船を作成します。\n");
-        number++;
-    }
+	//引数なしのコンストラクタ
+	public Spaceship() {
+		System.out.println("新しい宇宙船を作成します。\n");
+		number++;
+	}
 
-    public Spaceship(int air, int fuel) {
-        this.air = air;
-        this.fuel = fuel;
-    }
+	//引数ありのコンストラクタ
+	public Spaceship(int air, int fuel) {
+		this.air = air;
+		this.fuel = fuel;
+	}
 
-    public int getFuel() {
-        return fuel;
-    }
+	public int getFuel() {
+		return fuel;
+	}
 
-    public void setFuel(int fuel) {
-        this.fuel = fuel;
-    }
+	public void setFuel(int fuel) {
+		this.fuel = fuel;
+	}
 
-    public int getAir() {
-        return air;
-    }
+	public int getAir() {
+		return air;
+	}
 
-    public void setAir(int air) {
-        this.air = air;
-    }
+	public void setAir(int air) {
+		this.air = air;
+	}
 
-    //ここに適切な処理を記述する。
-
+	//ここに適切な処理を記述する。
+	public static int count() {
+		return number;
+	}
 }
 
 public class Astronaut {
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-        Spaceship spaceship1 = new Spaceship();
-        Spaceship spaceship2 = new Spaceship();
-        Spaceship spaceship3 = new Spaceship();
+		Spaceship spaceship1 = new Spaceship();
+		Spaceship spaceship2 = new Spaceship();
+		Spaceship spaceship3 = new Spaceship();
 
-        //ここに適切な処理を記述する。
-    }
+		//ここに適切な処理を記述する。
+		//staticメソッドを呼び出す
+		System.out.println("宇宙船は全部で" + Spaceship.count() + "台あります。");
+	}
 }

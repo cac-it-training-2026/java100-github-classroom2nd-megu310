@@ -41,33 +41,38 @@
 package lesson05.challenge01;
 
 //ここに次の条件を満たすクラスを作成してください。
+class Robot {
+	int energy;
+}
 //クラス名：Robot フィールド名：energy(int型)
 
 public class RobotMaker {
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-        System.out.println("G博士：");
-        System.out.println("今日は試作品１号、その名も「RF1」を作ってみるぞ！\n");
-        System.out.println("Rさん：");
-        System.out.println("どんなロボットなんですか？\n");
-        System.out.println("G博士：");
-        System.out.println("RF1は惣菜作成ロボットじゃ。材料を入れると惣菜が出てくる予定。\n");
-        System.out.println("Rさん：");
-        System.out.println("予定？\n");
-        System.out.println("G博士：");
-        System.out.println("今はまだエネルギーを貯められるだけじゃ。\n");
-        System.out.println("Rさん：");
-        System.out.println("そういうのもロボットって言うんですね。\n");
-        System.out.println("G博士：");
-        System.out.println("早速ロボットを作ってエネルギーを10メモリ分入れてくれ。\n");
+		System.out.println("G博士：");
+		System.out.println("今日は試作品１号、その名も「RF1」を作ってみるぞ！\n");
+		System.out.println("Rさん：");
+		System.out.println("どんなロボットなんですか？\n");
+		System.out.println("G博士：");
+		System.out.println("RF1は惣菜作成ロボットじゃ。材料を入れると惣菜が出てくる予定。\n");
+		System.out.println("Rさん：");
+		System.out.println("予定？\n");
+		System.out.println("G博士：");
+		System.out.println("今はまだエネルギーを貯められるだけじゃ。\n");
+		System.out.println("Rさん：");
+		System.out.println("そういうのもロボットって言うんですね。\n");
+		System.out.println("G博士：");
+		System.out.println("早速ロボットを作ってエネルギーを10メモリ分入れてくれ。\n");
 
-        //ここにRobotoクラスを利用したオブジェクトを作成してください。
-        //またフィールドenergyに10を代入してください。
+		//ここにRobotoクラスを利用したオブジェクトを作成してください。
+		//またフィールドenergyに10を代入してください。
+		Robot robot = new Robot();
+		robot.energy = 10;
 
-        System.out.println("Rさん：");
-        System.out.println("はい......１台作ってエネルギーを入れました。\n");
+		System.out.println("Rさん：");
+		System.out.println("はい......１台作ってエネルギーを入れました。\n");
 
-    }
+	}
 
 }

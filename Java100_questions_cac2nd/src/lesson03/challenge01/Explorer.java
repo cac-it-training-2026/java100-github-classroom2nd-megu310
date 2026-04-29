@@ -39,6 +39,8 @@ import java.io.InputStreamReader;
 
 public class Explorer {
 
+	//チェック例外「コンパイルが発生を予測できる例外」→メソッド宣言の後に[throws]
+	//非チェック例外「コンパイラが発見できない例外」→throw [例外名] でOK
 	public static void main(String[] args) throws IOException {
 
 		System.out.println("隊長：");
@@ -47,6 +49,7 @@ public class Explorer {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 		//ここにfor文を記述する。
+		for (int i = 0; i < 5; i++) {
 
 			System.out.print("応募する人の名前を入れてください＞");
 
@@ -54,7 +57,7 @@ public class Explorer {
 			System.out.println("\n隊長：");
 			System.out.println(name + "さん合格！\n");
 
-		//ここに  } を記述する。
+		} //ここに  } を記述する。
 
 		System.out.println("定員に達しました。募集を締め切ります。");
 
